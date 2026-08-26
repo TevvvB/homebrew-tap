@@ -18,11 +18,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Update parallel-harness-pets
+      - name: Update termagitchi
         env:
           GH_TOKEN: ${{ github.token }}
-          REPO: TevvvB/parallel-harness-pets
-          CASK: Casks/parallel-harness-pets.rb
+          REPO: TevvvB/termagitchi
+          CASK: Casks/termagitchi.rb
         run: |
           set -euo pipefail
 
@@ -54,10 +54,10 @@ jobs:
             -e "s/@@DARWIN_ARM64@@/$(sha darwin_arm64)/" \
             -e "s/@@LINUX_AMD64@@/$(sha linux_amd64)/" \
             -e "s/@@LINUX_ARM64@@/$(sha linux_arm64)/" \
-            templates/parallel-harness-pets.rb.tmpl > "$CASK"
+            templates/termagitchi.rb.tmpl > "$CASK"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$CASK"
-          git commit -m "parallel-harness-pets $version"
+          git commit -m "termagitchi $version"
           git push

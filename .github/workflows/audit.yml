@@ -30,11 +30,11 @@ jobs:
           brew tap
 
       - name: Audit
-        run: brew audit --cask --strict tevvvb/tap/parallel-harness-pets
+        run: brew audit --cask --strict tevvvb/tap/termagitchi
 
       - name: Install it for real
         run: |
           set -euo pipefail
-          brew install --cask tevvvb/tap/parallel-harness-pets
+          brew install --cask tevvvb/tap/termagitchi
           pets version
           pets --help | head -3

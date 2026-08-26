@@ -1,9 +1,9 @@
 # TevvvB's Homebrew tap
 
 ```sh
-brew install TevvvB/tap/parallel-harness-pets
+brew install TevvvB/tap/termagitchi
 ```
 
 | Formula | Description |
 |---|---|
-| [parallel-harness-pets](https://github.com/TevvvB/parallel-harness-pets) | A creature for every git worktree, in your agent's status line |
+| [termagitchi](https://github.com/TevvvB/termagitchi) | A creature for every git worktree, in your agent's status line |
